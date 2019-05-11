@@ -1,4 +1,5 @@
 katz_deli = []
+<<<<<<< HEAD
 
 def take_a_number (array, name)
 #  katz_deli.each do |n|
@@ -27,4 +28,23 @@ def now_serving (array)
 else
   puts "There is nobody waiting to be served!"
 end
+=======
+def line (katz_deli)
+  length = katz_deli.length
+  if length = 0
+    puts "The line is currently empty."
+  elsif length >0
+    katz_deli.each do |n|
+      line_length = length + 1
+      puts "the line is currently #{line_length}. {n}"
+    end
+  end
+end
+
+def take_a_number (katz_deli, name)
+  katz_deli.each do |n|
+    line_length = katz_deli.length + 1
+    katz_deli.push (name)
+  end
+>>>>>>> e82b0e6bf61868cdab5bb7cf7ea8a9b43b1be6d6
 end
